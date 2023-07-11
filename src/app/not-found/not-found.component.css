@@ -1,0 +1,13 @@
+.notFound{
+    margin-top: 250px;
+    padding-left: 350px;
+    margin-bottom: 450px;
+}
+h1{
+    color: maroon;
+}
+.go-back{
+    text-decoration: none;
+    color: maroon;
+
+}

@@ -1,0 +1,57 @@
+.icon{
+    width: 30p; height: 30px;
+}
+a{
+    display: inline-block;
+    width: 30px; 
+    height: 30px;
+}
+.close-btn { 
+        display: flex;
+        justify-content: top-left;
+}
+
+.no-border{
+    border: none;
+}
+.white-border{
+    border: 1px solid white;
+}
+.test-margin{
+    margin-left: 40px;
+}
+button{
+    align-items: right;
+    color: white;
+    background-color: maroon;
+}
+.backButton{
+    background-color: white;
+    margin-top: 80px;
+    margin-left: 80px ;
+}
+
+.Reviews{
+    margin-left: 310px;
+}
+.reviewHeading{
+    color:maroon;
+}
+.reviewInput{
+    margin-bottom: 10px;
+    width: 735px;
+}
+hr{
+    width: 735px;
+}
+
+.reviewPostBtn{
+        margin-bottom: 15px;
+        background-color: maroon;
+        color:white;
+}
+
+.reviewPostBtn :hover{
+    background-color: red;
+    color:white;
+}

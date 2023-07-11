@@ -1,0 +1,31 @@
+<app-navbar></app-navbar>
+
+<div class="main-home-component">
+  <div class="row">
+    <div class="col-md-5 mb-3" *ngFor="let book of bookList">
+      <div class="card shadow card-hover">
+        <div class="row">
+          <div class="col-sm-5">
+
+            <img (click)="detailsDisplay(book.bookName)" [src]="book.bookPicture" width="175px" height="250px" class="card-img-left" alt="">
+          </div>
+          <div class="col-sm-7">
+
+            <div class="card-body">
+              <h5 (click)="detailsDisplay(book.bookName)" class="card-title mb-2">{{book.bookName}}</h5>
+              <p class="card-text text-muted mb-1 right">by {{book.bookAuthor}}</p>
+              <p class="card-text text-muted mb-1 right">{{book.bookPrice | currency:"INR":"symbol"}}</p>
+              <p class="card-text mt-0">{{book.bookSmallInfo}}</p>
+              <button (click)="addToCart(book)"
+                [class]="book.bookCartAdded ? 'btn btn-danger btn-sm ' : 'btn cart-button btn-sm'">
+                <span *ngIf="!book.bookCartAdded">Add to Cart</span>
+                <span *ngIf="book.bookCartAdded">Book Added</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

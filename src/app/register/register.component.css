@@ -1,0 +1,46 @@
+.bg-image-vertical {
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: auto 100%;
+    }
+    
+    @media (min-width: 1025px) {
+    .h-custom-2 {
+    height: 100%;
+    }
+    }
+  
+  h1{
+      line-height: 50px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      color:#800000;
+    }
+  
+  
+  h3{
+    margin-left: 77px;
+    color:#800000;
+  }
+  
+  .signUpBtn{
+    background-color: #800000;
+    color: white;
+  }
+  
+  .registerForm{
+    margin-left: 77px;
+  }
+  
+  .signUpBtn:hover{
+    background-color:red;
+    color: white;
+  }
+
+  .back-btn-register{
+    position:fixed;
+    top: 60px;
+    right:60%;
+  }

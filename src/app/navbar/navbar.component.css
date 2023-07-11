@@ -1,0 +1,38 @@
+
+.no-border{
+    border: none;
+}
+.white-border{
+    border: 1px solid white;
+}
+.test{
+    width: 350px;
+}
+
+
+  
+  .logout-button:hover {
+    background-color: #d32f2f; 
+  }
+  
+  .logout-button a {
+    color: inherit; 
+    text-decoration: none; 
+  }
+
+.set-margin{
+    margin-right: 10px;
+}
+
+.shopping-cart:hover{
+    background-color: #d32f2f;
+    
+}
+
+.search-btn:hover{
+    background-color: #d32f2f; 
+}
+
+.shopping-cart{
+    margin-right: 15px;
+}

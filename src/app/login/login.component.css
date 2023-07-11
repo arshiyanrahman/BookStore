@@ -1,0 +1,46 @@
+.bg-image-vertical {
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: auto 100%;
+  }
+  
+  @media (min-width: 1025px) {
+  .h-custom-2 {
+  height: 100%;
+  }
+  }
+
+h1{
+    line-height: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+
+h1, h3{
+  color:#800000;
+}
+
+button{
+  background-color: #800000;
+  color: white;
+}
+
+a{
+  color:#800000;
+}
+.test, .Invalid{
+  margin-left: 77px;
+}
+
+.registerhere{
+  text-decoration: none;
+  color :#800000;
+}
+
+.signInBtn:hover{
+  background-color:red;
+  color: white;
+}

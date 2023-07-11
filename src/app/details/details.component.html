@@ -1,0 +1,41 @@
+<app-navbar></app-navbar>
+<div class="close-btn">
+  <button class="btn button-image test-margin no-border backButton"><a routerLink="/home"><img class="icon"
+        src="assets/left-arrow.png" alt="back"></a></button>
+</div>
+<div class="container pt-1 mt-0">
+
+  <div class="row justify-content-center">
+
+    <div class="col-md-8">
+      <div class="card mt-4 mb-3 shadow">
+        <div class="row g-0">
+          <div class="col-md-5">
+            <img src="{{book.bookPicture}}" class="img-fluid rounded-start" alt="{{book.bookName}}">
+          </div>
+          <div class="col-md-7">
+            <div class="card-body">
+              <h3 class="card-title">{{book.bookName}}</h3>
+              <p class="card-text text-muted mb-1 right">by {{book.bookAuthor}}</p>
+              <p class="card-text">{{book.bookInfo}}</p>
+              <p>
+                <b><em>{{book.price | currency:"INR":"symbol"}}</em></b>
+              </p>
+              <p class="text-end">
+
+                <button (click)="addToCart(book)" [class]="book.bookCartAdded ? 'btn btn-success' : 'btn btn-secondary'">
+                  <span *ngIf="!book.bookCartAdded">Add to Cart</span>
+                  <span *ngIf="book.bookCartAdded">Added</span>
+                </button>
+              </p>
+
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>

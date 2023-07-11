@@ -1,0 +1,25 @@
+.checkoutSection{
+    background-color: maroon;
+    color: white;
+}
+td{
+    width: 180px;
+}
+.mainCart{
+    margin-left: 245px;
+}
+
+.continue-shopping{
+    text-decoration: none;
+    color :#800000;
+    margin-left: 440px;
+}
+
+.delete-book{
+    background-color: #800000;
+    color: white;
+}
+
+.cartItems{
+    color: #800000;
+}

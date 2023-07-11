@@ -1,0 +1,27 @@
+
+  <nav class="navbar navbar-expand-md fixed-top navbar-dark " style="background-color: #800000;"> 
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="/home">The Faqirchand Bookstore </a>
+      
+      <form class="move-right d-flex mr-1">
+       <input class="test form-control me-2 border-success btn-raised" #name type="search" placeholder="search" aria-label="search">
+        <button (click)="searchBook(name.value)"  class="btn  white-border btn-outline text-white no-border search-btn" type="button">Search</button>   
+      </form>
+
+      <ul class="navbar-nav fw-bold m-1">
+        <li class="nav-item  mt-2">
+          <button class="btn button-image btn-outline no-border shopping-cart">
+            <a routerLink="/cart">
+              <img src="assets/shopping-cart.png" alt="">
+            </a>
+          </button>
+        </li>
+        <li>
+          <button class="btn text-white white-border logout-button mt-3">
+            <a routerLink="/">Logout</a>
+          </button>
+        </li>
+      </ul>
+      
+    </div>
+  </nav>
